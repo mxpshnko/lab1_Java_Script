@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР№6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="student">
+            <span>ПІБ: <strong>Пищенко Максим Олександрович</strong></span>
+            <span>Група: <strong>КН-31</strong></span>
+            <span>Варіант: <strong>№8</strong></span>
+        </div>
+
+        <h1>Лабораторна робота №6. Об‘єкти та масиви. Основи моделі DOM та події</h1>
+
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="task1.html" class="active">Завдання 1</a>
+            <a href="task2_1.html">Завдання 2.1</a>
+            <a href="task2_2.html">Завдання 2.2</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Завдання 1. Табло рейсів</h2>
+        
+        <div class="task">
+            <p>Створити масиви значень для рейсів: номер рейсу, початковий пункт, кінцевий пункт, тривалість рейсу.</p>
+            <p>Вивести інформацію у вигляді інформаційного табло: які рейси вже в повітрі, які ще не вилітали (для таких вказати час, що залишився до вильоту). Початковий та кінцевий пункти обираються зі списку.</p>
+        </div>
+
+        <h2>Інформаційне табло</h2>
+
+        <div class="table-wrap" id="result"></div>
+        
+        <button onclick="ras()">Показати табло</button>
+    </main>
+
+    <script src="task1.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР№6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="student">
+            <span>ПІБ: <strong>Пищенко Максим Олександрович</strong></span>
+            <span>Група: <strong>КН-31</strong></span>
+            <span>Варіант: <strong>№8</strong></span>
+        </div>
+
+        <h1>Лабораторна робота №6. Об‘єкти та масиви. Основи моделі DOM та події</h1>
+
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="task1.html">Завдання 1</a>
+            <a href="task2_1.html" class="active">Завдання 2.1</a>
+            <a href="task2_2.html">Завдання 2.2</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Завдання 2.1. Товари та ціни</h2>
+
+        <div class="task">
+            <p>У формі є два поля введення для товару та його ціни. Після натискання Enter при введенні ціни сформувати таблицю з двома стовпчиками: товар та ціна.</p>
+            <div class="form-grid">
+                <label>Товар <input type="text" id="tovar"></label>
+                <label>Ціна <input type="text" id="cina" onkeydown="enter(event)"></label>
+            </div>
+        </div>
+        
+        <div class="table-wrap" id="result"></div>
+    </main>
+
+    <script src="task2_1.js"></script>
+</body>
+
+</html>

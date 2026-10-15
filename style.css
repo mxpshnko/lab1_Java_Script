@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --font: "Comfortaa", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #eef1f4;
+    color: black;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 30px 0 10px 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 30px 50px 30px;
+}
+
+.site-header {
+    background-color: #1a2635;
+    color: white;
+    padding: 16px 40px;
+}
+
+.site-header h1 {
+    font-size: 28px;
+    margin: 10px 0 14px 0;
+}
+
+.student {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 25px;
+    font-size: 15px;
+    color: #c9d3dd;
+}
+
+.student strong {
+    color: white;
+}
+
+.nav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 4px solid #6b99cd;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #446181;
+}
+
+.nav a.active {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.task {
+    background-color: white;
+    border: 1px solid #cfd6dd;
+    border-radius: 4px;
+    padding: 16px 20px;
+}
+
+.task p {
+    margin: 5px 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: end;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    color: #5b6876;
+}
+
+input,
+button {
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+button {
+    margin-top: 20px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d5d8a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a2635;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-top: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 9px 13px;
+    border: 1px solid;
+    text-align: left;
+}
+
+th {
+    background-color: #e3e8ed;
+}
+
+.board {
+    min-width: 640px;
+    background-color: #0f1a24;
+    color: #ffb703;
+    font-family: var(--font);
+}
+
+.board th {
+    background-color: #1b2a38;
+    color: #c9d3dd;
+    border-color: #2b3a4a;
+}
+
+.board td {
+    border-color: #2b3a4a;
+}
+
+.board tr.air td.status {
+    color: #7ee787;
+}
+
+.board tr.done td {
+    color: #7d8a97;
+}
+
+#table1 td {
+    cursor: pointer;
+    user-select: none;
+}
+
+#table1 td:hover {
+    outline: 2px solid #1d5d8a;
+    outline-offset: -2px;
+}
+
+@media (max-width: 900px) {
+    .site-header {
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 15px 40px 15px;
+    }
+
+    .site-header h1 {
+        font-size: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav a {
+        flex: 1;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
